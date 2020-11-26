@@ -14,17 +14,21 @@ public class Go {
                 .maximumSize(1000)
                 .expireAfterWrite(10, TimeUnit.MINUTES)
                 .build();
-        try {
-            cache.get(Object, new Callable<Object>() {
-                @Override
-                public Object call() throws Exception {
-                    //return doThingsTheHardWay(key);
-                    return null;
-                }
-            });
-        } catch (ExecutionException e) {
-            throw new Exception(e.getCause());
-        }
+
+//        try {
+//            cache.get(Object, new Callable<Object>() {
+//                @Override
+//                public Object call() throws Exception {
+//                    //return doThingsTheHardWay(key);
+//                    return null;
+//                }
+//            });
+//        } catch (ExecutionException e) {
+//            throw new Exception(e.getCause());
+//        }
+
+
+
     }
 
 }

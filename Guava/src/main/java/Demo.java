@@ -5,6 +5,7 @@ public class Demo{
     {
         //guava
         Optional<Integer> possible = Optional.of(6);
+
         if(possible.isPresent())
         {
             System.out.println("possible isPresent:" +    possible.isPresent());
